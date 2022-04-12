@@ -33,7 +33,7 @@
         android:paddingTop="10dp">
 
         <Button
-            android:id="@+id/signInButton"
+            android:id="@+id/homeSignInButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#387BB2"
@@ -43,7 +43,7 @@
             android:textColor="@color/black"
             android:textStyle="bold" />
         <Button
-            android:id="@+id/logInButton"
+            android:id="@+id/homeLogInButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#387BB2"
