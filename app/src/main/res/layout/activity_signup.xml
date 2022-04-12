@@ -49,7 +49,7 @@
             app:boxStrokeWidth="3dp"
             android:textColorHint="#C2B2A7"
             android:hint="Fullname"
-            app:startIconDrawable="@drawable/ic_baseline_account_circle_24"
+            app:startIconDrawable="@drawable/ic_baseline_fullnames"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
