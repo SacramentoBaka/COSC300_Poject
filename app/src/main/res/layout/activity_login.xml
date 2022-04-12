@@ -21,7 +21,8 @@
             android:fontFamily="@font/adamina"
             android:paddingTop="60dp"
             android:paddingBottom="10dp"
-            android:text="LOGIN ACCOUNT"
+            android:drawableStart="@drawable/ic_baseline_account_circle_24"
+            android:text=" LOGIN ACCOUNT"
             android:textColor="#38BDBD"
             android:textSize="18dp"
             android:textStyle="bold" />

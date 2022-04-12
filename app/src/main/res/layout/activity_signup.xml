@@ -20,8 +20,10 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/adamina"
             android:paddingTop="60dp"
+            android:drawableStart="@drawable/ic_baseline_account_circle_24"
             android:paddingBottom="10dp"
-            android:text="SIGNUP ACCOUNT"
+            android:text=" SIGNUP ACCOUNT"
+            android:drawableEnd=""
             android:textColor="#38BDBD"
             android:textSize="18dp"
             android:textStyle="bold" />
