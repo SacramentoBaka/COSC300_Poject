@@ -12,17 +12,15 @@
         android:layout_width="wrap_content"
         android:layout_height="266dp"
         android:layout_marginTop="190dp"
-        android:background="@drawable/logo_rental"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
+        <ImageView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/adamina"
-            android:gravity="center"
-            android:paddingTop="250dp"
-            android:text="@string/rent_you_car_with_just_few_clicks"
-            android:textColor="#F8C1BFBF" />
+            android:background="@drawable/logo_rental"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"/>
+
     </LinearLayout>
 
     <LinearLayout
