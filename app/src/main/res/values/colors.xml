@@ -8,6 +8,4 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="box_stroke_color" tools:override="true">#FFFFFFFF</color>
-
 </resources>

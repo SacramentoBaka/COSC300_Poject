@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Material Design</string>
+    <string name="rent_you_car_with_just_few_clicks">Rent you car with just few clicks</string>
+    <string name="login">login</string>
+    <string name="privacy_policy_terms_of_use">Privacy policy terms of use</string>
+    <string name="signup_account">SIGNUP ACCOUNT</string>
+    <string name="hello_let_s_get_started">Hello! Let\'s get started</string>
+    <string name="fullname">Fullname</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="signup">signup</string>
+    <string name="already_registered_login_here">Already registered ? Login here</string>
+    <string name="login_account">LOGIN ACCOUNT</string>
+    <string name="hello_welcome_back">Hello! Welcome Back</string>
+    <string name="instant_car_rental">Instant Car Rental</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="not_yet_registered_create_account">Not yet registered ? Create Account</string>
 </resources>

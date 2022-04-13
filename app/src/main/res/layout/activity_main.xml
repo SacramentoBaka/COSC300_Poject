@@ -21,9 +21,10 @@
             android:fontFamily="@font/adamina"
             android:gravity="center"
             android:paddingTop="250dp"
-            android:text="Rent you car with just few clicks"
+            android:text="@string/rent_you_car_with_just_few_clicks"
             android:textColor="#F8C1BFBF" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,7 +40,7 @@
             android:backgroundTint="#387BB2"
             android:fontFamily="@font/aclonica"
             android:layout_marginTop="20dp"
-            android:text="signup"
+            android:text="@string/signup"
             android:textColor="@color/black"
             android:textStyle="bold" />
         <Button
@@ -49,7 +50,7 @@
             android:backgroundTint="#387BB2"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/aclonica"
-            android:text="login"
+            android:text="@string/login"
             android:textColor="@color/black"
             android:textStyle="bold" />
 
@@ -60,9 +61,9 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/amita"
         android:paddingTop="50dp"
-        android:text="Privacy policy terms of use"
+        android:text="@string/privacy_policy_terms_of_use"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="12dp" />
+        android:textSize="12sp" />
 
 </LinearLayout>

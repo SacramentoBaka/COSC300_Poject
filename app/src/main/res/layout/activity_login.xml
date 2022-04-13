@@ -22,29 +22,30 @@
             android:fontFamily="@font/adamina"
             android:paddingTop="60dp"
             android:paddingBottom="10dp"
-            android:drawableStart="@drawable/ic_baseline_account_circle_24"
-            android:text=" LOGIN ACCOUNT"
+            android:text="@string/login_account"
             android:textColor="#38BDBD"
-            android:textSize="18dp"
-            android:textStyle="bold" />
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_baseline_account_circle_24" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/adamina"
-            android:paddingLeft="30dp"
-            android:text="Hello! Welcome Back"
+            android:paddingStart="30dp"
+            android:text="@string/hello_welcome_back"
             android:textColor="#38BDBD"
-            android:textSize="12dp" />
+            android:textSize="12sp"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/adamina"
             android:paddingTop="120dp"
-            android:text="Instant Car Rental"
+            android:text="@string/instant_car_rental"
             android:textAlignment="center"
             android:textColor="#38BDBD"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -61,7 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginTop="16dp"
-            android:hint="Username"
+            android:hint="@string/username"
             android:textColorHint="#C2B2A7"
             app:boxStrokeWidth="3dp"
             app:startIconDrawable="@drawable/ic_baseline_account_circle_24"
@@ -81,7 +82,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginTop="16dp"
-            android:hint="Password"
+            android:hint="@string/password"
             android:textColorHint="#C2B2A7"
             app:boxStrokeWidth="3dp"
             app:endIconMode="password_toggle"
@@ -112,7 +113,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#387BB2"
             android:fontFamily="@font/aclonica"
-            android:text="LOGIN"
+            android:text="@string/login"
             android:textColor="@color/black"
             android:textStyle="bold" />
 
@@ -123,9 +124,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="10dp"
-        android:text="Not yet registered ? Create Account"
+        android:text="@string/not_yet_registered_create_account"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="16dp" />
+        android:textSize="16sp" />
 
 </LinearLayout>
