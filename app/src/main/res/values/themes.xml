@@ -30,6 +30,8 @@
 
         <item name="android:windowBackground" >@drawable/splash_imag</item>
         <item name="android:statusBarColor">@color/black</item>
+        <item name="colorPrimary">#C2B2A7</item>
+        <item name="colorOnSurface">#C2B2A7</item>
 
     </style>
 
