@@ -1,9 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.MaterialDesign" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">#C2B2A7</item>
-        <item name="colorOnSurface">#C2B2A7</item>
-        <item name="colorError">@color/shrine_red</item>
+        <item name="colorPrimary">@color/myBackgroundColor</item>
+        <item name="colorOnSurface">@color/myBackgroundColor</item>
         <item name="textAppearanceSubtitle1">@style/TextAppearance.App.Subtitle1</item>
         <item name="textAppearanceCaption">@style/TextAppearance.App.Caption</item>
         <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
