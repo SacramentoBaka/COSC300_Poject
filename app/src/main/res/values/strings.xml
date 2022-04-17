@@ -16,4 +16,8 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="not_yet_registered_create_account">Not yet registered ? Create Account</string>
+    <string name="search_car_description">Search car</string>
+    <string name="search">Search</string>
+    <string name="help">Help</string>
+    <string name="logout">LogOut</string>
 </resources>
