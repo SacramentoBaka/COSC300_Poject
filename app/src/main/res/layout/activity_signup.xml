@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="15dp"
-    android:background="@drawable/background"
+    android:theme="@style/splashScreenTheme1"
+    android:background="@drawable/bar_image"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -23,18 +24,16 @@
             android:paddingTop="60dp"
             android:paddingBottom="10dp"
             android:text="@string/signup_account"
-            android:textColor="#38BDBD"
+            android:textColor="@color/white"
             android:textSize="18sp"
-            android:textStyle="bold"
-            app:drawableStartCompat="@drawable/ic_baseline_account_circle_24" />
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/hello_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/adamina"
-            android:paddingStart="30dp"
             android:text="@string/hello_let_s_get_started"
-            android:textColor="#38BDBD"
+            android:textColor="@color/white"
             android:textSize="12sp"
             tools:ignore="RtlSymmetry" />
 
@@ -53,6 +52,7 @@
             app:boxStrokeWidth="3dp"
             android:textColorHint="#C2B2A7"
             android:hint="@string/fullname"
+            app:boxBackgroundColor="#1C1A1A"
             app:startIconDrawable="@drawable/ic_baseline_fullnames"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -72,6 +72,7 @@
             android:layout_marginTop="16dp"
             app:boxStrokeWidth="3dp"
             android:hint="@string/username"
+            app:boxBackgroundColor="#1C1A1A"
             app:startIconDrawable="@drawable/ic_baseline_account_circle_24"
             android:textColorHint="#C2B2A7"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -91,6 +92,7 @@
             android:layout_marginTop="16dp"
             app:boxStrokeWidth="3dp"
             android:hint="@string/email"
+            app:boxBackgroundColor="#1C1A1A"
             app:startIconDrawable="@drawable/ic_baseline_email_24"
             android:textColorHint="#C2B2A7"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -110,6 +112,7 @@
             android:layout_marginTop="16dp"
             app:boxStrokeWidth="3dp"
             android:hint="@string/password"
+            app:boxBackgroundColor="#1C1A1A"
             app:endIconMode="password_toggle"
             app:startIconDrawable="@drawable/ic_baseline_lock_24"
             android:textColorHint="#C2B2A7"
@@ -131,6 +134,7 @@
             android:layout_marginTop="16dp"
             app:boxStrokeWidth="3dp"
             android:hint="@string/phone"
+            app:boxBackgroundColor="#1C1A1A"
             app:startIconDrawable="@drawable/ic_baseline_call_24"
             android:textColorHint="#C2B2A7"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">

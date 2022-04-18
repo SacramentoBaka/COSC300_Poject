@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="15dp"
-    android:background="@drawable/background"
+    android:theme="@style/splashScreenTheme"
+    android:background="@drawable/bar_image3"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -23,7 +24,7 @@
             android:paddingTop="60dp"
             android:paddingBottom="10dp"
             android:text="@string/login_account"
-            android:textColor="#38BDBD"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"
             app:drawableStartCompat="@drawable/ic_baseline_account_circle_24" />
@@ -33,7 +34,7 @@
             android:fontFamily="@font/adamina"
             android:paddingStart="30dp"
             android:text="@string/hello_welcome_back"
-            android:textColor="#38BDBD"
+            android:textColor="@color/black"
             android:textSize="12sp"
             tools:ignore="RtlSymmetry" />
 
@@ -44,7 +45,7 @@
             android:paddingTop="120dp"
             android:text="@string/instant_car_rental"
             android:textAlignment="center"
-            android:textColor="#38BDBD"
+            android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold" />
 
@@ -63,7 +64,8 @@
             android:layout_gravity="center_vertical"
             android:layout_marginTop="16dp"
             android:hint="@string/username"
-            android:textColorHint="#C2B2A7"
+            app:boxBackgroundColor="@color/white"
+            android:textColorHint="@color/black"
             app:boxStrokeWidth="3dp"
             app:startIconDrawable="@drawable/ic_baseline_account_circle_24"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -83,8 +85,9 @@
             android:layout_gravity="center_vertical"
             android:layout_marginTop="16dp"
             android:hint="@string/password"
-            android:textColorHint="#C2B2A7"
+            android:textColorHint="@color/black"
             app:boxStrokeWidth="3dp"
+            app:boxBackgroundColor="@color/white"
             app:endIconMode="password_toggle"
             app:startIconDrawable="@drawable/ic_baseline_lock_24"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -126,7 +129,7 @@
         android:paddingTop="10dp"
         android:text="@string/not_yet_registered_create_account"
         android:textAlignment="center"
-        android:textColor="@color/myBackgroundColor"
+        android:textColor="@color/white"
         android:textSize="16sp" />
 
 </LinearLayout>
