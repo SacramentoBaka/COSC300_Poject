@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="15dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
     android:theme="@style/splashScreenTheme1"
     android:background="@drawable/bar_image"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,12 +27,14 @@
             android:text="@string/signup_account"
             android:textColor="@color/white"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_account_black" />
         <TextView
             android:id="@+id/hello_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/adamina"
+            android:paddingStart="25dp"
             android:text="@string/hello_let_s_get_started"
             android:textColor="@color/white"
             android:textSize="12sp"
@@ -43,7 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingTop="70dp">
+        android:paddingTop="100dp">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayoutFullnames"
@@ -58,6 +61,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/fullname"
+                android:inputType="textAutoComplete"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"/>
@@ -79,6 +83,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/signUpUsername"
+                android:inputType="textAutoComplete"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white" />
@@ -99,6 +104,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/email"
+                android:inputType="textAutoComplete"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white" />
@@ -152,9 +158,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingTop="30dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
 
         <Button
             android:id="@+id/signUpButton"
@@ -166,16 +172,18 @@
             android:textColor="@color/black"
             android:textStyle="bold" />
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/loginHereText"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:paddingTop="5dp"
+            android:text="@string/already_registered_login_here"
+            android:textAlignment="center"
+            android:gravity="bottom"
+            android:textColor="@color/myBackgroundColor"
+            android:textSize="16sp"
+            tools:ignore="RtlCompat" />
 
-    <TextView
-        android:id="@+id/loginHereText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/already_registered_login_here"
-        android:textSize="16sp"
-        android:textAlignment="center"
-        android:paddingTop="10dp"
-        android:textColor="@color/myBackgroundColor"/>
+    </LinearLayout>
 
 </LinearLayout>

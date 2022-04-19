@@ -23,20 +23,14 @@ public class Login extends AppCompatActivity {
         createAccount = findViewById(R.id.createAccountText);
 
 
-        login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Login.this, HomeActivity.class);
-                startActivity(intent);
-            }
+        login.setOnClickListener(v -> {
+            Intent intent = new Intent(Login.this, HomeActivity.class);
+            startActivity(intent);
         });
-        createAccount.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Login.this, Signup.class);
-                startActivity(intent);
-                finish();
-            }
+        createAccount.setOnClickListener(v -> {
+            Intent intent = new Intent(Login.this, Signup.class);
+            startActivity(intent);
+            finish();
         });
     }
 }

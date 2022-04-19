@@ -21,21 +21,15 @@ public class Signup extends AppCompatActivity {
         signUp = findViewById(R.id.signUpButton);
         loginText = findViewById(R.id.loginHereText);
 
-        signUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Signup.this, Login.class);
-                startActivity(intent);
-                finish();
-            }
+        signUp.setOnClickListener(v -> {
+            Intent intent = new Intent(Signup.this, Login.class);
+            startActivity(intent);
+            finish();
         });
-        loginText.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Signup.this, Login.class);
-                startActivity(intent);
-                finish();
-            }
+        loginText.setOnClickListener(v -> {
+            Intent intent = new Intent(Signup.this, Login.class);
+            startActivity(intent);
+            finish();
         });
     }
 }
