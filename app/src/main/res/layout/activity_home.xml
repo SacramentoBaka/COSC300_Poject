@@ -36,6 +36,7 @@
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolBar"
                 app:layout_collapseParallaxMultiplier="2.5"
+                app:titleCentered="true"
                 app:title="Instant car Rental"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"

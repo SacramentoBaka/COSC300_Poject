@@ -9,7 +9,7 @@
     <string name="email">Email</string>
     <string name="phone">Phone</string>
     <string name="signup">signup</string>
-    <string name="already_registered_login_here">Already registered ? Login here</string>
+    <string name="already_registered_login_here">Already registered? Login here</string>
     <string name="login_account">LOGIN ACCOUNT</string>
     <string name="hello_welcome_back">Hello! Welcome Back</string>
     <string name="instant_car_rental">Instant Car Rental</string>
