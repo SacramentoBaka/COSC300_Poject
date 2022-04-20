@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class Login extends AppCompatActivity {
 
     Button login;
-    TextView createAccount;
+    TextView createAccount, signUp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,8 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         login = findViewById(R.id.logInButton);
-        createAccount = findViewById(R.id.createAccountText);
+        createAccount = findViewById(R.id.signUpNow);
+        signUp = findViewById(R.id.signUpOption);
 
 
         login.setOnClickListener(v -> {
@@ -28,6 +29,11 @@ public class Login extends AppCompatActivity {
             startActivity(intent);
         });
         createAccount.setOnClickListener(v -> {
+            Intent intent = new Intent(Login.this, Signup.class);
+            startActivity(intent);
+            finish();
+        });
+        signUp.setOnClickListener(v -> {
             Intent intent = new Intent(Login.this, Signup.class);
             startActivity(intent);
             finish();

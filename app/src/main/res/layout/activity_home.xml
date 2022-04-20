@@ -30,7 +30,7 @@
                 android:src="@drawable/bar_image"
                 android:scaleType="centerCrop"
                 android:fitsSystemWindows="true"
-                android:contentDescription="ToolBar image"
+                android:contentDescription="@string/toolbar_image"
                 app:layout_collapseMode="parallax"/>
 
             <com.google.android.material.appbar.MaterialToolbar
@@ -72,7 +72,8 @@
                     android:layout_height="120dp"
                     android:layout_marginTop="80dp"
                     android:layout_weight="1"
-                    android:text="New Reservation"
+                    android:text="@string/new_reservation"
+                    android:fontFamily="sans-serif-medium"
                     android:textSize="14sp"
                     android:textColor="@color/black"
                     android:textStyle="bold"
@@ -90,7 +91,8 @@
                     android:layout_height="120dp"
                     android:layout_marginTop="80dp"
                     android:layout_weight="1"
-                    android:text="Manage reservation"
+                    android:text="@string/manage_reservation"
+                    android:fontFamily="sans-serif-medium"
                     android:textSize="14sp"
                     android:textColor="@color/black"
                     android:textStyle="bold"
@@ -107,7 +109,8 @@
                     android:layout_height="120dp"
                     android:layout_marginTop="80dp"
                     android:layout_weight="1"
-                    android:text="long/short term rental"
+                    android:text="@string/long_short_term_rental"
+                    android:fontFamily="sans-serif-medium"
                     android:textSize="14sp"
                     android:textColor="@color/black"
                     android:textStyle="bold"
@@ -135,7 +138,8 @@
                     android:layout_width="110dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
-                    android:text="cost"
+                    android:text="@string/cost"
+                    android:fontFamily="sans-serif-medium"
                     android:textSize="14sp"
                     android:textColor="@color/black"
                     android:textStyle="bold"
@@ -152,7 +156,8 @@
                     android:layout_width="110dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
-                    android:text="promotion"
+                    android:text="@string/promotion"
+                    android:fontFamily="sans-serif-medium"
                     android:textSize="14sp"
                     android:textColor="@color/black"
                     android:textStyle="bold"
@@ -180,7 +185,7 @@
         android:textStyle="bold"
         android:layout_marginBottom="15dp"
         android:textColor="@color/black"
-        android:text="Developed by Sacramento"
+        android:text="@string/by_sacramento_text"
         tools:ignore="RtlCompat" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
