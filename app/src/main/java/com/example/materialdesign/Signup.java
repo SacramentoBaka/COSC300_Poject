@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 public class Signup extends AppCompatActivity {
 
-    Button signUp;
-    TextView loginText, memberSignInText;
+    Button signUp, loginTextButton;
+    TextView memberSignInText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class Signup extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
 
         signUp = findViewById(R.id.signUpButton);
-        loginText = findViewById(R.id.signInOption);
+        loginTextButton = findViewById(R.id.signInTextButton);
         memberSignInText = findViewById(R.id.memberText);
 
         signUp.setOnClickListener(v -> {
@@ -27,7 +27,7 @@ public class Signup extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
-        loginText.setOnClickListener(v -> {
+        loginTextButton.setOnClickListener(v -> {
             Intent intent = new Intent(Signup.this, Login.class);
             startActivity(intent);
             finish();

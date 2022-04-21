@@ -27,7 +27,6 @@
             android:text="@string/signup_account"
             android:textColor="@color/white"
             android:textSize="18sp"
-            android:textStyle="bold"
             app:drawableStartCompat="@drawable/ic_account_black" />
 
         <TextView
@@ -198,17 +197,18 @@
             android:textSize="16sp"
             tools:ignore="RtlCompat" />
 
-        <TextView
-            android:id="@+id/signInOption"
-            android:layout_width="match_parent"
-            android:layout_height="26dp"
+        <Button
+            android:id="@+id/signInTextButton"
             android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
-            android:gravity="bottom"
+            android:textStyle="bold"
+            android:textSize="14sp"
             android:text="@string/sign_in"
             android:textColor="#28EAD8"
-            android:textSize="16sp"
-            tools:ignore="RtlCompat" />
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            />
 
     </LinearLayout>
 

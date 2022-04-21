@@ -29,5 +29,6 @@
     <string name="member_text">Already a member?</string>
     <string name="sign_in">Sign In</string>
     <string name="not_a_member_text">Not a member?</string>
-    <string name="sign_up_now">Sign Up now</string>
+    <string name="sign_up_now">Sign Up</string>
+    <string name="forgot_password">Forgot Password?</string>
 </resources>
