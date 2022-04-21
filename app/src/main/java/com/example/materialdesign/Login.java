@@ -11,8 +11,7 @@ import android.widget.TextView;
 
 public class Login extends AppCompatActivity {
 
-    Button login, signUp, forgotPassword;
-    TextView createAccount;
+    Button login, signUp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,19 +19,13 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         login = findViewById(R.id.logInButton);
-        createAccount = findViewById(R.id.signUpNow);
         signUp = findViewById(R.id.signUpTextButton);
-
 
         login.setOnClickListener(v -> {
             Intent intent = new Intent(Login.this, HomeActivity.class);
             startActivity(intent);
         });
-        createAccount.setOnClickListener(v -> {
-            Intent intent = new Intent(Login.this, Signup.class);
-            startActivity(intent);
-            finish();
-        });
+
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,6 +34,5 @@ public class Login extends AppCompatActivity {
                 finish();
             }
         });
-
     }
 }

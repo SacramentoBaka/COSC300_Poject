@@ -105,17 +105,19 @@
 
         <Button
             android:layout_marginTop="5dp"
+            android:backgroundTint="@color/white"
             android:id="@+id/ForgotPassButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:layout_gravity="end"
             android:fontFamily="sans-serif-medium"
+            android:textSize="11sp"
             android:textStyle="bold"
-            android:textSize="14sp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/myBackgroundColor"
             android:text="@string/forgot_password"
-            android:textColor="#28EAD8"
-            style="@style/Widget.MaterialComponents.Button.TextButton"
-            />
+            android:textColor="#000000"
+            style="@style/Widget.MaterialComponents.Button.TextButton" />
 
     </LinearLayout>
 
@@ -144,31 +146,37 @@
         android:orientation="horizontal">
 
         <TextView
+            android:layout_marginVertical="13dp"
             android:id="@+id/signUpNow"
             android:layout_width="wrap_content"
-            android:layout_height="26dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
             android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-medium"
             android:gravity="bottom"
-            android:layout_marginStart="80dp"
+            android:textStyle="bold"
             android:text="@string/not_a_member_text"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="18sp"
             tools:ignore="RtlCompat" />
 
         <Button
+            android:padding="2dp"
             android:id="@+id/signUpTextButton"
             android:layout_marginTop="10dp"
+            android:layout_marginStart="3dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:fontFamily="sans-serif-medium"
+            android:textSize="11sp"
             android:textStyle="bold"
-            android:textSize="14sp"
+            android:backgroundTint="@color/white"
             android:text="@string/sign_up_now"
-            android:textColor="#28EAD8"
-            style="@style/Widget.MaterialComponents.Button.TextButton"
-            />
+            android:textColor="@color/black"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/myBackgroundColor"
+            style="@style/Widget.MaterialComponents.Button.TextButton" />
 
     </LinearLayout>
 
