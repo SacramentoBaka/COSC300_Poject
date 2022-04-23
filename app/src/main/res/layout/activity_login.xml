@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="15dp"
+    android:padding="20dp"
     android:theme="@style/splashScreenTheme"
     android:background="@drawable/bar_image3">
 
@@ -14,14 +14,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:layout_marginTop="100dp">
 
         <TextView
             android:id="@+id/login_account_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
-            android:paddingTop="60dp"
             android:paddingBottom="10dp"
             android:text="@string/login_account"
             android:textColor="@color/black"
@@ -31,7 +30,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-medium"
+            android:fontFamily="sans-serif"
             android:paddingStart="25dp"
             android:text="@string/hello_welcome_back"
             android:textColor="@color/black"
@@ -42,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
-            android:paddingTop="120dp"
+            android:layout_marginTop="80dp"
             android:text="@string/instant_car_rental"
             android:textAlignment="center"
             android:textColor="@color/black"
@@ -103,21 +102,20 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
+        <TextView
             android:layout_marginTop="5dp"
-            android:backgroundTint="#79FFFFFF"
             android:id="@+id/ForgotPassButton"
             android:layout_width="wrap_content"
-            android:layout_height="35dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="2dp"
             android:layout_gravity="end"
+            android:background="#A8FFFFFF"
             android:fontFamily="sans-serif-medium"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            app:strokeColor="@color/myBackgroundColor"
+            android:textSize="14sp"
             android:text="@string/forgot_password"
             android:textColor="#FCA50A00"
-            style="@style/Widget.MaterialComponents.Button.TextButton"
-            tools:ignore="SmallSp" />
+            tools:ignore="RtlCompat" />
 
     </LinearLayout>
 
@@ -141,42 +139,41 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_marginVertical="13dp"
             android:id="@+id/signUpNow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
             android:layout_marginTop="10dp"
-            android:fontFamily="sans-serif-medium"
-            android:gravity="bottom"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:padding="2dp"
             android:textStyle="bold"
-            android:background="#80000000"
             android:text="@string/not_a_member_text"
+            android:background="#A8FFFFFF"
             android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            tools:ignore="RtlCompat" />
+            android:textColor="@color/black"
+            android:textSize="15sp" />
 
         <Button
-            android:padding="2dp"
             android:id="@+id/signUpTextButton"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="3dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:fontFamily="sans-serif-medium"
-            android:textSize="11sp"
-            android:textStyle="bold"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
             android:backgroundTint="#68FFFFFF"
+            android:fontFamily="sans-serif-medium"
             android:text="@string/sign_up_now"
             android:textColor="#FCA50A00"
-            app:strokeColor="@color/myBackgroundColor"
-            style="@style/Widget.MaterialComponents.Button.TextButton" />
+            android:textSize="11sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

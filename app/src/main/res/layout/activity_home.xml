@@ -11,7 +11,7 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="210dp"
         app:liftOnScroll="true"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
@@ -37,7 +37,7 @@
                 android:id="@+id/toolBar"
                 app:layout_collapseParallaxMultiplier="2.5"
                 app:titleCentered="true"
-                app:title="Instant car Rental"
+                app:title="HOME"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="@android:color/transparent"
@@ -73,16 +73,17 @@
                     android:layout_marginTop="80dp"
                     android:layout_weight="1"
                     android:text="@string/new_reservation"
-                    android:fontFamily="sans-serif-medium"
-                    android:textSize="14sp"
-                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif"
+                    android:textSize="11sp"
                     android:textStyle="bold"
+                    android:textColor="@color/black"
                     android:padding="5dp"
+                    android:backgroundTint="#50FFFFFF"
                     app:icon="@drawable/ic_reserve"
                     app:iconTint="@color/black"
                     app:iconGravity="top"
                     app:iconSize="40dp"
-                    app:strokeWidth="3dp"
+                    app:strokeWidth="2dp"
                     app:strokeColor="#2B2929"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"/>
 
@@ -92,34 +93,37 @@
                     android:layout_marginTop="80dp"
                     android:layout_weight="1"
                     android:text="@string/manage_reservation"
-                    android:fontFamily="sans-serif-medium"
-                    android:textSize="14sp"
-                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif"
+                    android:textSize="11sp"
                     android:textStyle="bold"
+                    android:textColor="@color/black"
                     android:padding="5dp"
+                    android:backgroundTint="#50FFFFFF"
                     app:icon="@drawable/ic_edit_road"
                     app:iconTint="@color/black"
                     app:iconGravity="top"
                     app:iconSize="40dp"
-                    app:strokeWidth="3dp"
+                    app:strokeWidth="2dp"
                     app:strokeColor="@color/black"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"/>
+
                 <Button
                     android:layout_width="110dp"
                     android:layout_height="120dp"
                     android:layout_marginTop="80dp"
                     android:layout_weight="1"
                     android:text="@string/long_short_term_rental"
-                    android:fontFamily="sans-serif-medium"
-                    android:textSize="14sp"
-                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif"
+                    android:textSize="11sp"
                     android:textStyle="bold"
+                    android:textColor="@color/black"
                     android:padding="5dp"
+                    android:backgroundTint="#50FFFFFF"
                     app:icon="@drawable/ic_car_rental"
                     app:iconTint="@color/black"
                     app:iconGravity="top"
                     app:iconSize="40dp"
-                    app:strokeWidth="3dp"
+                    app:strokeWidth="2dp"
                     app:strokeColor="@color/black"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"/>
 
@@ -139,16 +143,17 @@
                     android:layout_height="120dp"
                     android:layout_weight="1"
                     android:text="@string/cost"
-                    android:fontFamily="sans-serif-medium"
-                    android:textSize="14sp"
-                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif"
+                    android:textSize="11sp"
                     android:textStyle="bold"
+                    android:textColor="@color/black"
                     android:padding="5dp"
+                    android:backgroundTint="#50FFFFFF"
                     app:icon="@drawable/ic_cost"
                     app:iconTint="@color/black"
                     app:iconGravity="top"
                     app:iconSize="40dp"
-                    app:strokeWidth="3dp"
+                    app:strokeWidth="2dp"
                     app:strokeColor="#2B2929"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"/>
 
@@ -157,16 +162,17 @@
                     android:layout_height="120dp"
                     android:layout_weight="1"
                     android:text="@string/promotion"
-                    android:fontFamily="sans-serif-medium"
-                    android:textSize="14sp"
-                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif"
+                    android:textSize="11sp"
                     android:textStyle="bold"
+                    android:textColor="@color/black"
                     android:padding="5dp"
+                    android:backgroundTint="#50FFFFFF"
                     app:icon="@drawable/ic_hourglass_top"
                     app:iconTint="@color/black"
                     app:iconGravity="top"
                     app:iconSize="40dp"
-                    app:strokeWidth="3dp"
+                    app:strokeWidth="2dp"
                     app:strokeColor="@color/black"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"/>
 
@@ -175,7 +181,10 @@
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
+
     <TextView
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
@@ -184,7 +193,8 @@
         android:textSize="15sp"
         android:textStyle="bold"
         android:layout_marginBottom="15dp"
-        android:textColor="@color/black"
+        android:textColor="#972906"
+        android:background="#68FFFFFF"
         android:text="@string/by_sacramento_text"
         tools:ignore="RtlCompat" />
 
