@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity"
     android:background="@drawable/bar_image3"
+    android:backgroundTint="#3406090B"
     android:fitsSystemWindows="true">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -53,6 +54,7 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="15dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
@@ -63,118 +65,108 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginTop="100dp"
                 android:orientation="horizontal">
 
                 <Button
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
                     android:layout_width="110dp"
                     android:layout_height="120dp"
-                    android:layout_marginTop="80dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#50FFFFFF"
+                    android:fontFamily="sans-serif"
                     android:text="@string/new_reservation"
-                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
                     android:textSize="11sp"
                     android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:padding="5dp"
-                    android:backgroundTint="#50FFFFFF"
                     app:icon="@drawable/ic_reserve"
-                    app:iconTint="@color/black"
                     app:iconGravity="top"
                     app:iconSize="40dp"
-                    app:strokeWidth="2dp"
+                    app:iconTint="@color/black"
                     app:strokeColor="#2B2929"
-                    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"/>
+                    app:strokeWidth="2dp" />
 
                 <Button
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
                     android:layout_width="110dp"
                     android:layout_height="120dp"
-                    android:layout_marginTop="80dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#50FFFFFF"
+                    android:fontFamily="sans-serif"
                     android:text="@string/manage_reservation"
-                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
                     android:textSize="11sp"
                     android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:padding="5dp"
-                    android:backgroundTint="#50FFFFFF"
                     app:icon="@drawable/ic_edit_road"
-                    app:iconTint="@color/black"
                     app:iconGravity="top"
                     app:iconSize="40dp"
-                    app:strokeWidth="2dp"
+                    app:iconTint="@color/black"
                     app:strokeColor="@color/black"
-                    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"/>
+                    app:strokeWidth="2dp" />
 
                 <Button
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
                     android:layout_width="110dp"
                     android:layout_height="120dp"
-                    android:layout_marginTop="80dp"
                     android:layout_weight="1"
-                    android:text="@string/long_short_term_rental"
+                    android:backgroundTint="#50FFFFFF"
                     android:fontFamily="sans-serif"
+                    android:text="@string/long_short_term_rental"
+                    android:textColor="@color/black"
                     android:textSize="11sp"
                     android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:padding="5dp"
-                    android:backgroundTint="#50FFFFFF"
                     app:icon="@drawable/ic_car_rental"
-                    app:iconTint="@color/black"
                     app:iconGravity="top"
                     app:iconSize="40dp"
-                    app:strokeWidth="2dp"
+                    app:iconTint="@color/black"
                     app:strokeColor="@color/black"
-                    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"/>
+                    app:strokeWidth="2dp" />
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
                 android:orientation="horizontal">
 
                 <Button
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
                     android:layout_width="110dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
-                    android:text="@string/cost"
+                    android:backgroundTint="#50FFFFFF"
                     android:fontFamily="sans-serif"
+                    android:text="@string/cost"
+                    android:textColor="@color/black"
                     android:textSize="11sp"
                     android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:padding="5dp"
-                    android:backgroundTint="#50FFFFFF"
                     app:icon="@drawable/ic_cost"
-                    app:iconTint="@color/black"
                     app:iconGravity="top"
                     app:iconSize="40dp"
-                    app:strokeWidth="2dp"
+                    app:iconTint="@color/black"
                     app:strokeColor="#2B2929"
-                    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"/>
+                    app:strokeWidth="2dp" />
 
                 <Button
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
                     android:layout_width="110dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
-                    android:text="@string/promotion"
+                    android:backgroundTint="#50FFFFFF"
                     android:fontFamily="sans-serif"
+                    android:text="@string/promotion"
+                    android:textColor="@color/black"
                     android:textSize="11sp"
                     android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:padding="5dp"
-                    android:backgroundTint="#50FFFFFF"
                     app:icon="@drawable/ic_hourglass_top"
-                    app:iconTint="@color/black"
                     app:iconGravity="top"
                     app:iconSize="40dp"
-                    app:strokeWidth="2dp"
+                    app:iconTint="@color/black"
                     app:strokeColor="@color/black"
-                    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"/>
+                    app:strokeWidth="2dp" />
 
             </LinearLayout>
 
