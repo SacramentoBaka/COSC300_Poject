@@ -34,4 +34,6 @@
     <string name="feedback">Send Feedback</string>
     <string name="tell_about">About</string>
     <string name="sign_out_menu_text">Sign Out</string>
+    <string name="get_started">Get Started</string>
+    <string name="policy">By using our service you are agreeing to our Term and Privacy Statement</string>
 </resources>
