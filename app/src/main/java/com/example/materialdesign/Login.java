@@ -8,13 +8,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
 
 public class Login extends AppCompatActivity {
 
-    Button login, signUp, forgotPassword;
-    TextView createAccount;
+    private Button login, signUp;
+    private TextView forgotPassword;
+    private TextView createAccount;
     private TextInputLayout logInUsernameEdit, logInPasswordEdit;
 
     @Override
@@ -24,6 +26,7 @@ public class Login extends AppCompatActivity {
 
         login = findViewById(R.id.logInButton);
         createAccount = findViewById(R.id.signUpNow);
+        forgotPassword = findViewById(R.id.forgotPassText);
         signUp = findViewById(R.id.signUpTextButton);
         logInUsernameEdit = findViewById(R.id.textInputLayoutLoginUsername);
         logInPasswordEdit = findViewById(R.id.textInputLayoutLoginPassword);
@@ -32,8 +35,10 @@ public class Login extends AppCompatActivity {
         login.setOnClickListener(v -> {
 
             if(!logInUsernameValidation() | !logInPasswordValidation()){
+                Toast.makeText(this, "All inputs required", Toast.LENGTH_SHORT).show();
                 return;
             }
+            Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(Login.this, HomeActivity.class);
             startActivity(intent);
         });
@@ -42,13 +47,14 @@ public class Login extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
-        signUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Login.this, Signup.class);
-                startActivity(intent);
-                finish();
-            }
+        signUp.setOnClickListener(v -> {
+            Intent intent = new Intent(Login.this, Signup.class);
+            startActivity(intent);
+            finish();
+        });
+        forgotPassword.setOnClickListener(v -> {
+            Intent intent = new Intent(Login.this, ForgotEmail.class);
+            startActivity(intent);
         });
     }
     public boolean logInUsernameValidation() {

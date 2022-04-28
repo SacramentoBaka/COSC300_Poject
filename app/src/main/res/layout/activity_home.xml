@@ -174,20 +174,4 @@
 
     </androidx.core.widget.NestedScrollView>
 
-    <TextView
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:textAlignment="center"
-        android:fontFamily="@font/adamina"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="15dp"
-        android:textColor="#972906"
-        android:background="#68FFFFFF"
-        android:text="@string/by_sacramento_text"
-        tools:ignore="RtlCompat" />
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

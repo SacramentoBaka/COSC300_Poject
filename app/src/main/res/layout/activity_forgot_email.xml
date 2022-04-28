@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forgot"
+    android:padding="20dp"
+    android:theme="@style/homeTheme"
+    android:orientation="vertical"
+    tools:context=".ForgotEmail">
+
+    <TextView
+        android:layout_marginTop="150dp"
+        android:id="@+id/login_account_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="10dp"
+        android:text="Enter reset Email:"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutForgotPassEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:hint="@string/email"
+        app:errorEnabled="true"
+        app:helperTextEnabled="false"
+        app:endIconMode="clear_text"
+        android:textColorHint="#C2B2A7"
+        app:boxBackgroundColor="#A31C1A1A"
+        app:boxStrokeWidth="3dp"
+        app:startIconDrawable="@drawable/ic_baseline_email_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/forgotPassEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/resetPassButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:fontFamily="sans-serif-medium"
+        android:text="Reset password"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Reset Link will be sent to your email!"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        tools:ignore="RtlSymmetry" />
+
+</LinearLayout>

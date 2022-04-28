@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
@@ -31,9 +32,10 @@ public class Signup extends AppCompatActivity {
         signUp.setOnClickListener(v -> {
 
             if(!usernameValidation() | !emailValidation() | !passwordValidation()){
+                Toast.makeText(this, "Input Required", Toast.LENGTH_SHORT).show();
                 return;
             }
-
+            Toast.makeText(this, "Sign up successful", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(Signup.this, Login.class);
             startActivity(intent);
             finish();
